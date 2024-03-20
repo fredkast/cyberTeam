@@ -1,26 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { Question } from '../app/model/questionReponses';  // Assurez-vous que le chemin d'accès est correct
-import { FormGroup, FormBuilder,ReactiveFormsModule, Validators, FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  standalone: true,
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss'],
-  imports: [ReactiveFormsModule]  
+  styleUrls: ['./form.component.scss'], 
 })
 export class FormComponent implements OnInit {
   form: FormGroup;
-  maturityScore : number = 0;
-  constructor() {
+  submitted = false;
+  maturityScore: number;
+
+   constructor(private formBuilder: FormBuilder) { }
     this.form = new FormGroup({
       couleurPreferee: new FormControl(''), // Vous pouvez définir une valeur par défaut ici
-      animalPrefere: new FormControl(''),
-      saisonPreferee: new FormControl('')
     });
   }
   ngOnInit(): void {
-    console.log(this.form)
+    this.maturiteForm = this.formBuilder.group({
+      couleurPreferee: ['', Validators.required],
+    });
   }
 
   onSubmit() {

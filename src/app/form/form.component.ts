@@ -40,15 +40,16 @@ export class FormComponent implements OnInit {
     this.maturityScore = 0;
     this.displayScore = true;
     console.log(this.displayScore)
+    this.getMaturityScore();
+    this.getResponse();
+  }
 
+  getMaturityScore(){
     const values = Object.values(this.form.value);
-  
     for (const value of values) {
       this.maturityScore += Number(value);
     }
-    this.getResponse();
     console.log('Maturity Score:', this.maturityScore);
-        console.log('Maturity Score:', this.maturityScore);
   }
 
   getResponse() {

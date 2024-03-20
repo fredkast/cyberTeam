@@ -1,0 +1,153 @@
+<section id="entreprise" class="my-5">
+  <div class="container">
+    <div class="bd-title">
+      <h1>Testez vos connaissances en cybersécurité</h1>
+      <h3>Que savez-vous de la cybersécurité ? Testez vos connaissances avec un quiz rapide sur les principes de base de la sécurité en ligne.</h3>
+    </div>
+    <div class="row gy-4 align-items-center">
+      <div class="container">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="form-check">
+            <p>Connaissez vous le périmètre de votre systèmes d’informations,et avez vous un inventaire des applications
+              et des données vitales pour votre entreprise au regard de votre activité</p>
+            <div><input type="radio" id="q0_a1" formControlName="question1" class="form-check-input" value="1">
+              <label class="form-check-label" for="q0_a1">
+                Pas du tout (value 1)</label>
+            </div>
+            <div><input type="radio" id="q0_a2" formControlName="question1" class="form-check-input" value="2">
+              <label class="form-check-label" for="q0_a2">
+                Partiellement ou c'est en cours (value 1)</label>
+            </div>
+            <div><input type="radio" id="q0_a3" formControlName="question1" class="form-check-input" value="3">
+              <label class="form-check-label" for="q0_a3">
+                J'ai une solution operationnel (value 4)</label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-check">
+            <p>A quel Rythme sont sauvegardé vos données</p>
+            <div><input type="radio" id="q1_a1" formControlName="question2" class="form-check-input" value="1">
+              <label class="form-check-label" for="q1_a1">
+                Jamais
+              </label>
+            </div>
+            <div><input type="radio" id="q1_a2" formControlName="question2" class="form-check-input" value="2">
+              <label class="form-check-label" for="q1_a2">
+                A l'occasion</label>
+            </div>
+            <div><input type="radio" id="q1_a3" formControlName="question2" class="form-check-input" value="3">
+              <label class="form-check-label" for="q1_a3">
+                Automatiquemennt et de facon industrialisé et sur des supports differents</label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-check">
+            <p>Avez mis en place vous une protection antivirale pour votre parc</p>
+            <div><input type="radio" id="q2_a1" formControlName="question3" class="form-check-input" value="1">
+              <label class="form-check-label" for="q2_a1">
+                Non</label>
+            </div>
+            <div><input type="radio" id="q2_a2" formControlName="question3" class="form-check-input" value="2">
+              <label class="form-check-label" for="q2_a2">
+                Non, c'est a la charge de l'utilisateur</label>
+            </div>
+            <div><input type="radio" id="q2_a3" formControlName="question3" class="form-check-input" value="3">
+              <label class="form-check-label" for="q2_a3">
+                Oui et les mises à jours sont obligatoires également</label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-check">
+            <p>Êtes vous sensibilisé aux cyberattaques et aux bonnes pratiques à mettre en place en cas d’attaque ?</p>
+            <div><input type="radio" id="q3_a1" formControlName="question4" class="form-check-input" value="1">
+              <label class="form-check-label" for="q3_a1">
+                Non pas du tout</label>
+            </div>
+            <div><input type="radio" id="q3_a2" formControlName="question4" class="form-check-input" value="2">
+              <label class="form-check-label" for="q3_a2">
+                J'ai entendu parlé de certaine pratiques</label>
+            </div>
+            <div><input type="radio" id="q3_a3" formControlName="question4" class="form-check-input" value="3">
+              <label class="form-check-label" for="q3_a3">
+                Mes collaborateurs sont fromé systématiquement</label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-check">
+            <p>Avez vous mis en place une politique de sensibilisation de vos collaborateur aux risques cyber</p>
+            <div><input type="radio" id="q4_a1" formControlName="question5" class="form-check-input" value="1">
+              <label class="form-check-label" for="q4_a1">
+                Non pas du tout</label>
+            </div>
+            <div><input type="radio" id="q4_a2" formControlName="question5" class="form-check-input" value="2">
+              <label class="form-check-label" for="q4_a2">
+                En cours de mise en place</label>
+            </div>
+            <div><input type="radio" id="q4_a3" formControlName="question5" class="form-check-input" value="3">
+              <label class="form-check-label" for="q4_a3">
+                Oui systématiquement</label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-check">
+            <p>Avez vous des travailleurs nomade</p>
+            <div><input type="radio" id="q5_a1" formControlName="question6" class="form-check-input" value="1">
+              <label class="form-check-label" for="q5_a1">
+                Non pas du tout</label>
+            </div>
+            <div><input type="radio" id="q5_a2" formControlName="question6" class="form-check-input" value="2">
+              <label class="form-check-label" for="q5_a2">
+                Cela peut arriver</label>
+            </div>
+            <div><input type="radio" id="q5_a3" formControlName="question6" class="form-check-input" value="3">
+              <label class="form-check-label" for="q5_a3">
+                Oui et ils utilisent un VPN</label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-check">
+            <p>Connaissez vous les risques qui découle du travail nomade</p>
+            <div><input type="radio" id="q6_a1" formControlName="question7" class="form-check-input" value="1">
+              <label class="form-check-label" for="q6_a1">
+                Non cela ne me dit rien</label>
+            </div>
+            <div><input type="radio" id="q6_a2" formControlName="question7" class="form-check-input" value="2">
+              <label class="form-check-label" for="q6_a2">
+                J'ai une bref idée</label>
+            </div>
+            <div><input type="radio" id="q6_a3" formControlName="question7" class="form-check-input" value="3">
+              <label class="form-check-label" for="q6_a3">
+                Oui nous sommes formés et les collaborateur ont signé une charte</label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-check">
+            <p>Avez vous déjà entendu parler de double authentification</p>
+            <div><input type="radio" id="q7_a1" formControlName="question8" class="form-check-input" value="1">
+              <label class="form-check-label" for="q7_a1">
+                Non cela ne me dit rien</label>
+            </div>
+            <div><input type="radio" id="q7_a2" formControlName="question8" class="form-check-input" value="2">
+              <label class="form-check-label" for="q7_a2">
+                Oui nous voudrions la mettre en place.</label>
+            </div>
+            <div><input type="radio" id="q7_a3" formControlName="question8" class="form-check-input" value="3">
+              <label class="form-check-label" for="q7_a3">
+                Oui elle est deja en place</label>
+            </div>
+          </div>
+          <div class="container">
+            <button type="submit" class="btn btn-primary">Soumettre</button>
+
+          </div>
+        </form>
+      </div>
+      <div *ngIf="displayScore" class="container">
+        <p>Votre score de maturité est : {{ maturityScore }}</p>
+        <p>{{responseToDisplay}}</p>
+        <p>Contactez-nous pour réaliser une audit complete de votre SI</p>
+        <button class="btn btn-xl btn-danger">Nous contacter</button>
+      </div>
+    </div>
+  </div>
+</section>

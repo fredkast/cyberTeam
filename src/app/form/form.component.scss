@@ -1,3 +1,45 @@
 .mainContainer{
-    height: 200px;
+    height: 100px;
+}
+.boutonContainer{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;}
+.resultContainer{
+    idth: 100%;
+    background-color: aliceblue;
+    padding: 40px;
+
+}
+.font{
+    font-family: monospace;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.orange{
+    color: orange;
+}
+h2{
+    font-family: monospace!important;
+    font-size: 1em;
+}
+
+.bd-title{
+    padding: 40px;
+    background-color: lavender;
+    margin-bottom: 40px;
+}
+
+.questionTitle{
+    font-family: monospace;
+    margin-top: 40px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.form-check-label{
+    font-size: 0.8em;
 }

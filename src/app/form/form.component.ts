@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,ReactiveFormsModule, FormControl } from '@angular/forms';
-import { CommonModule, NgIf } from '@angular/common'; // Importer CommonModule
+import { CommonModule, NgClass, NgIf } from '@angular/common'; // Importer CommonModule
 
 @Component({
   standalone: true,
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.scss'],
-  imports: [ReactiveFormsModule, NgIf]  
+  imports: [ReactiveFormsModule, NgIf, NgClass]  
 })
 export class FormComponent implements OnInit {
 

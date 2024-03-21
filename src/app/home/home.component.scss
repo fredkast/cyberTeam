@@ -34,13 +34,20 @@
     height: 50vh;
 
 }
+#contact{
+    background-color: #0B014C;
+    color: white;
+}
 #enterprise2{
     margin-top: 60px;
+}
+.monoplace{
+    font-family: monospace;
 }
 .titleHeader::before {
     content: '';
     /* Nécessaire pour que le pseudo-élément s'affiche */
-    background-color: #0B014C;
+    background-color: #0B014C!important;
 
     position: absolute;
     /* Positionnement par rapport à .titleHeader */
@@ -117,3 +124,37 @@ h3 {
 p {
     font-size: 0.8em
 }
+@keyframes slideInFromRight {
+    from {
+      transform: translateX(100%); /* Commence en dehors de l'écran, à droite */
+      opacity: 0; /* Commence invisible */
+    }
+    to {
+      transform: translateX(0); /* Termine à sa position normale */
+      opacity: 1; /* Termine complètement visible */
+    }
+  }
+
+  .animation{
+    animation-name: slideInFromRight; /* Nom de l'animation définie ci-dessus */
+  animation-duration: 1s; /* Durée de l'animation, ajustez selon vos besoins */
+  animation-timing-function: ease-out; /* Accélère au début, ralentit à la fin */
+  animation-fill-mode: forwards; 
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fadeIn {
+    animation-name: fadeIn; /* Nom de l'animation définie ci-dessus */
+    animation-duration: 1.5s; /* Durée de l'animation, ajustez selon vos besoins */
+    animation-timing-function: ease-in-out; /* Démarrage et fin en douceur */
+    animation-fill-mode: forwards; /* Garde les styles finaux après la fin de l'animation */
+  }
+  

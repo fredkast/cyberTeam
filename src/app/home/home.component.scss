@@ -1,56 +1,119 @@
-.mainContainer{
+.mainContainer {
     height: 100px;
 }
-.boutonContainer{
+
+.boutonContainer {
     margin-top: 100px;
     text-align: center;
-    margin-bottom: 100px;}
-.resultContainer{
-    idth: 100%;
+    margin-bottom: 100px;
+}
+
+.resultContainer {
+    width: 100%;
     background-color: aliceblue;
     padding: 40px;
 
 }
-.titleHeader{
-    text-align: center;
-    background-color: aliceblue;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    height: 300px;
-}
-.font{
-    font-family: monospace;
-}
-.red{
-    color: red;
-}
-.green{
-    color: green;
-}
-.orange{
-    color: orange;
-}
-h2{
-    font-size: 1.5em;
-}
-h3{
-    font-family: monospace!important;
-    font-size: 1em;
+
+.form {
+    width: auto;
 }
 
-.bd-title{
+.titleHeader {
+    text-align: center;
+    background-color: #0B014C;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: left;
+    height: 60vh;
+    position: relative;
+    /* Nécessaire pour le positionnement du pseudo-élément */
+    z-index: 1;
+    /* Assurez-vous que le contenu reste au-dessus du fond */
+    height: 50vh;
+
+}
+#enterprise2{
+    margin-top: 60px;
+}
+.titleHeader::before {
+    content: '';
+    /* Nécessaire pour que le pseudo-élément s'affiche */
+    background-color: #0B014C;
+
+    position: absolute;
+    /* Positionnement par rapport à .titleHeader */
+    top: 0;
+    left: 0%;
+    width: 100%;
+    /* Couvrir l'élément parent */
+    height: 100%;
+    /* Couvrir l'élément parent */
+    background-image: url('/assets/team.jpg'); /* Chemin de votre image */
+    background-size: cover;
+    /* Couvrir entièrement l'espace disponible */
+    background-position: center;
+    /* Centrer l'image */
+    background-repeat: no-repeat;
+    /* Ne pas répéter l'image */
+    opacity: 0.5;
+    /* Ajustez l'opacité selon vos besoins */
+    z-index: -1;
+    /* Placer l'arrière-plan derrière le contenu */
+}
+
+.font {
+    font-family: monospace;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+h1 {
+    font-family: monospace;
+    color: white;
+    font-size: 4em;
+
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: monospace !important;
+    font-size: 1em;
+    color: white;
+
+}
+
+.bd-title {
     padding: 40px;
     background-color: lavender;
     margin-bottom: 40px;
 }
 
-.questionTitle{
+.questionTitle {
     font-family: monospace;
     margin-top: 40px;
     font-size: 1em;
     font-weight: bold;
 }
-.form-check-label{
+
+.form-check-label {
     font-size: 0.8em;
 }
-p{font-size: 0.8em}
+
+p {
+    font-size: 0.8em
+}

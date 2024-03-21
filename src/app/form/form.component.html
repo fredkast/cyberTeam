@@ -143,7 +143,7 @@
         </form>
       </div>
       <div *ngIf="displayScore" class="resultContainer">
-        <p [ngClass]="{red: maturityScore < 10, orange: maturityScore >= 10 && maturityScore < 10, green: maturityScore >= 20}" class="font">Votre score de maturité est : <b>{{ maturityScore }}</b></p>
+        <p [ngClass]="{red: maturityScore < 10, orange: maturityScore >= 10 && maturityScore < 20, green: maturityScore >= 20}" class="font">Votre score de maturité est : <b>{{ maturityScore }}</b></p>
         <p>{{responseToDisplay}}</p>
         <p>Contactez-nous pour réaliser une audit complete de votre SI</p>
         <button class="btn btn-xl btn-danger">Nous contacter</button>
